@@ -1,19 +1,4 @@
-// import { Link } from 'react-router-dom';
-
-// const Sidebar = () => (
-//   <div className="w-64 h-screen bg-gray-800 text-white">
-//     <ul>
-//       <li><Link to="/users">Users</Link></li>
-//       <li><Link to="/roles">Roles</Link></li>
-//       <li><Link to="/permissions">Permissions</Link></li>
-//     </ul>
-//   </div>
-// );
-
-// export default Sidebar;
-
-
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Sidebar = () => (
   <div className="w-64 h-screen bg-gray-800 text-white">
@@ -29,7 +14,10 @@ const Sidebar = () => (
         </Link>
       </li>
       <li>
-        <Link to="/permissions" className="block px-4 py-2 hover:bg-gray-700 rounded">
+        <Link
+          to="/permissions"
+          className="block px-4 py-2 hover:bg-gray-700 rounded"
+        >
           Permissions
         </Link>
       </li>
@@ -38,4 +26,3 @@ const Sidebar = () => (
 );
 
 export default Sidebar;
-
